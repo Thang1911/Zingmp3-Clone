@@ -883,6 +883,7 @@
     flex-direction: column;
     padding: 22px 12px 22px 10px;
     margin-bottom: 40px;
+    overflow: auto;
 }
 
 .zingchart-week__headding {

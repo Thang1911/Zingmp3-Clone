@@ -5,7 +5,7 @@ const optionAllSongList = $(".option-all__songs-list");
 const musicNowTym = $(".music-control__left-action-tym-box");
 const volumeIcon = $(".music-control__right-volume-icon");
 const audio = $("#audio");
-// var sliderItems=Array.from($$('.option-all__song-slider-img'));
+
 const sliderBox = $(".option-all__song-slider");
 const sliderItems = $$(".option-all__song-slider-img");
 const playBtn = $(".js__music-control__icon-play");
@@ -44,10 +44,6 @@ const containerPanes = $$(".js__container-panes");
 const slidersDiscover = $$(".container-discover__slider-item");
 
 var backgroundIndex = 0;
-// x = 100  // center
-// y = 50   // center
-// r = 50   // radius
-// a = 2    // angle (from 0 to Math.PI * 2)
 
 document.addEventListener("DOMContentLoaded", function () {
   const lyricTab = document.querySelector(
@@ -59,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
   lyricTab.addEventListener("click", function () {
     const isLyricActive = lyricContent.getAttribute("data-active") === "true";
 
-    // Toggle the "active" attribute for both elements
     if (isLyricActive) {
       lyricContent.setAttribute("data-active", "false");
       playerBody.setAttribute("data-active", "true");
@@ -71,7 +66,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const app = {
-  // sliderIndex: 0,
   songsData: [
     {
       background: "./assets/img/songs/0.webp",
@@ -199,24 +193,6 @@ const app = {
         return this.songsData[this.currentIndex];
       },
     });
-  },
-
-  toastSlide: function () {
-    const toatMain = $("#toast");
-    if (toatMain) {
-      const toast = document.createElement("div");
-      toast.classList.add("toast");
-      toast.innerHTML = `
-                <div class="toast__item">
-                    <i class="fa-solid fa-circle-exclamation"></i>
-                    <span>Chức năng này đang được phát triển, bạn vui lòng thử lại sau !</span>
-                </div>
-            `;
-      toatMain.appendChild(toast);
-      setTimeout(function () {
-        toatMain.removeChild(toast);
-      }, 3000);
-    }
   },
 
   // THEME APPLY SKIN
