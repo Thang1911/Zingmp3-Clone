@@ -3,28 +3,28 @@ const $$ = document.querySelectorAll.bind(document);
 
 const optionAllSongList = $(".option-all__songs-list");
 const musicNowTym = $(".music-control__left-action-tym-box");
-const volumeIcon = $(".music-control__right-volume-icon");
+
 const audio = $("#audio");
 
 const sliderBox = $(".option-all__song-slider");
 const sliderItems = $$(".option-all__song-slider-img");
-const playBtn = $(".js__music-control__icon-play");
-const thunbPlayerBox = $(".music-control__left");
-const progress = $("#progress");
-const remainTime = $(".js__music-control__progress-time-start");
-const durationTime = $(".js__music-control__progress-time-duration");
+// const playBtn = $(".js__music-control__icon-play");
+// const thunbPlayerBox = $(".music-control__left");
+
+
+// const durationTime = $(".js__music-control__progress-time-duration");
 const prevBtn = $(".js__music-control__icon2");
 const nextBtn = $(".js__music-control__icon4");
-const nameSong = $(".music-control__left-content-song");
-const nameSinger = $(".music-control__left-content-singer");
-const cdThumb = $(".music-control__left-img");
+// const nameSong = $(".music-control__left-content-song");
+// const nameSinger = $(".music-control__left-content-singer");
+// const cdThumb = $(".music-control__left-img");
 const playAllBtn = $(".js__playall-0");
 const playAllBtn1 = $(".js__playall-1");
 const randomBtn = $(".js__music-control__icon1");
-const repeatBtn = $(".js__music-control__icon5");
-const volumeProgress = $("#progress1");
+
+// const volumeProgress = $("#progress1");
 const nextSongHeadding = $(".nextsong__fist");
-const nextSongList = $(".nextsong__last-list");
+// const nextSongList = $(".nextsong__last-list");
 const header = $(".header");
 const mainContainer = $(".main-container");
 const headerSetting = $(".header__setting");
@@ -37,9 +37,9 @@ const themeClosebtn = $(".theme-modal__close-btn");
 const themeOverlay = $(".theme-modal__overlay");
 const themeBody = $(".theme-modal__body");
 const themeItems = $$(".js-theme-item");
-const tabs = $$(".tabs-item");
+
 const panes = $$(".panes-item");
-const sideBarTabs = $$(".js__sidebar-tabs");
+
 const containerPanes = $$(".js__container-panes");
 const slidersDiscover = $$(".container-discover__slider-item");
 
@@ -81,104 +81,6 @@ const app = {
       pathSong: "./assets/music/list-song/1.mp3",
       duration: "04:05",
     },
-    {
-      background: "./assets/img/songs/2.jpeg",
-      name: "Sẵn Sàng Yêu Em Đi Thôi",
-      singer: "Woni, Minh Tú, Đại Mèo Remix",
-      pathSong: "./assets/music/list-song/2.mp3",
-      duration: "03:51",
-    },
-    {
-      background: "./assets/img/songs/3.webp",
-      name: "Gieo Quẻ",
-      singer: "Hoàng Thuỳ Linh, ĐEN, Orinn Remix",
-      pathSong: "./assets/music/list-song/3.mp3",
-      duration: "04:27",
-    },
-    {
-      background: "./assets/img/songs/4.webp",
-      name: "Vui Lắm Nha",
-      singer: "Hương Ly, Jombie, RIN Music Remix",
-      pathSong: "./assets/music/list-song/4.m4a",
-      duration: "05:16",
-    },
-    {
-      background: "./assets/img/songs/5.webp",
-      name: "Lưu Số Em Đi",
-      singer: "Huỳnh Văn, V.P. Tiên, Đại Mèo Remix",
-      pathSong: "./assets/music/list-song/5.m4a",
-      duration: "04:10",
-    },
-    {
-      background: "./assets/img/songs/6.webp",
-      name: "Như Một Người Dưng",
-      singer: "Nguyễn Thạc Bảo Ngọc, Remix",
-      pathSong: "./assets/music/list-song/6.mp3",
-      duration: "05:05",
-    },
-    {
-      background: "./assets/img/songs/7.webp",
-      name: "Ôm Nhiều Mộng Mơ",
-      singer: "Phát Huy T4, Đại Mèo Remix",
-      pathSong: "./assets/music/list-song/7.m4a",
-      duration: "03:16",
-    },
-    {
-      background: "./assets/img/songs/8.jpg",
-      name: "Tình Yêu Ngủ Quên",
-      singer: "Hoàng Tôn, LyHan, Orinn Remix",
-      pathSong: "./assets/music/list-song/8.mp3",
-      duration: "04:27",
-    },
-    {
-      background: "./assets/img/songs/9.webp",
-      name: "Không Bằng",
-      singer: "Na, RIN Music Remix",
-      pathSong: "./assets/music/list-song/9.m4a",
-      duration: "03:23",
-    },
-    {
-      background: "./assets/img/songs/10.webp",
-      name: "Ai Chung Tình Được Mãi",
-      singer: "Đinh Tùng Huy, ACV Remix",
-      pathSong: "./assets/music/list-song/10.m4a",
-      duration: "03:55",
-    },
-    {
-      background: "./assets/img/songs/11.webp",
-      name: "Cô Đơn Dành Cho Ai",
-      singer: "NAL, LEE KEN, Orinn Remix",
-      pathSong: "./assets/music/list-song/11.m4a",
-      duration: "04:45",
-    },
-    {
-      background: "./assets/img/songs/12.webp",
-      name: "Ánh mắt ta chạm nhau",
-      singer: "Ngô Lan Hương, Đại Mèo remix",
-      pathSong: "./assets/music/list-song/12.m4a",
-      duration: "06:01",
-    },
-    {
-      background: "./assets/img/songs/13.webp",
-      name: "2 Phút Hơn",
-      singer: "Phao, KAIZ Remix",
-      pathSong: "./assets/music/list-song/13.m4a",
-      duration: "05:02",
-    },
-    {
-      background: "./assets/img/songs/14.webp",
-      name: "Là Ai Từ Bỏ Là Ai Vô Tình",
-      singer: "Hương Ly, Jombie (G5R), RIN Music Remix",
-      pathSong: "./assets/music/list-song/14.m4a",
-      duration: "03:25",
-    },
-    {
-      background: "./assets/img/songs/2.jpeg",
-      name: "Yêu Đừng Sợ Đau",
-      singer: "Ngô Lan Hương, Cukak Remix",
-      pathSong: "./assets/music/list-song/15.m4a",
-      duration: "03:51",
-    },
   ],
   currentIndex: 0,
   isPlaying: false,
@@ -192,530 +94,6 @@ const app = {
       get: function () {
         return this.songsData[this.currentIndex];
       },
-    });
-  },
-
-  // THEME APPLY SKIN
-  applyTheme: function () {
-    themeItems.forEach((themeItem, index) => {
-      themeItem.onclick = function () {
-        if (index == 0) {
-          backgroundIndex = 0;
-          $(
-            ".header"
-          ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
-          $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
-          $(
-            ".header"
-          ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
-          $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
-          $(".main").style.backgroundImage =
-            "url(./assets/img/background-theme/backroundThemes/0.svg)";
-          $(".main-music-control").style.backgroundImage = "";
-          $(".main-music-control").style.backgroundColor = "#37075D";
-          $(".mobile-tab").style.backgroundColor = "#37075D";
-          $(".sidebar__add-playlist").style.backgroundColor = "#411465";
-          $(".sidebar__add-playlist").style.borderTop =
-            "1px solid rgba(255, 255, 255, 0.1)";
-          $(".nextsong__option-wrapper").style.backgroundColor = "#4B206E";
-          $(".header__width-search-sub").style.backgroundColor = "#6A39AF";
-          $(".header__width-search-sub").classList.add(
-            "header__width-search-sub--purple"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--white"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--green"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--gray"
-          );
-          $(".header__width-search").classList.remove(
-            "js__gray-backgroundColor"
-          );
-          $(".header__setting-list").style.backgroundColor = "#6A39AF";
-          $(".theme-modal__body").style.backgroundColor = "#6A39AF";
-          $(".nextsong__option-wrapper-listplay").style.backgroundColor =
-            "#816399";
-          $(".main-sidebar").style.backgroundColor = "hsla(0,0%,100%,0.05)";
-          $(".header__width-search-input").classList.remove(
-            "header__width-search-input--white"
-          );
-          $(".header__width-search-input").classList.add(
-            "header__width-search-input--dark"
-          );
-          $(
-            ".music__option-item.music__option-item--active"
-          ).style.backgroundColor = "#816399";
-          $(".music__option-item.music__option-item--active").style.color =
-            "#fff";
-          $(".music-control__volume-input").style.backgroundColor =
-            "rgba(255, 255, 255, 0.3)";
-          $(".music-control__progress-input").style.backgroundColor =
-            "rgba(255, 255, 255, 0.3)";
-
-          $$(".js__main-color").forEach((item) => {
-            item.style.color = "#fff";
-          });
-          $$(".js__sub-color").forEach((item) => {
-            item.style.color = "rgba(255, 255, 255, 0.5)";
-          });
-          $$(".js__backgroundColor").forEach((item) => {
-            item.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
-          });
-          $$(".js__border").forEach((item) => {
-            item.style.border = "2px solid #fff";
-          });
-        } else if (index == 1) {
-          backgroundIndex = 1;
-          $(
-            ".header"
-          ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
-          $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
-          $(".main").style.backgroundImage =
-            "url(./assets/img/background-theme/backroundThemes/1.jpg)";
-          $(".main-music-control").style.backgroundImage = "none";
-          $(".main-music-control").style.backgroundColor = "#202020";
-          $(".mobile-tab").style.backgroundColor = "#202020";
-          $(".sidebar__add-playlist").style.backgroundColor = "#333333";
-          $(".sidebar__add-playlist").style.borderTop =
-            "1px solid rgba(0, 0, 0, 0.1)";
-          $(".nextsong__option-wrapper").style.backgroundColor = "#3E3E3E";
-          $(".header__width-search-sub").style.backgroundColor = "#3E3E3E";
-          $(".header__width-search-sub").classList.add(
-            "header__width-search-sub--gray"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--purple"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--white"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--green"
-          );
-          $(".header__width-search").classList.remove(
-            "js__gray-backgroundColor"
-          );
-          $(".header__setting-list").style.backgroundColor = "#3E3E3E";
-          $(".theme-modal__body").style.backgroundColor = "#3D3D3D";
-          $(".nextsong__option-wrapper-listplay").style.backgroundColor =
-            "#787878";
-          $(".main-sidebar").style.backgroundColor = "hsla(0,0%,100%,0.05)";
-          $(".header__width-search-input").classList.remove(
-            "header__width-search-input--white"
-          );
-          $(".header__width-search-input").classList.add(
-            "header__width-search-input--dark"
-          );
-          $(
-            ".music__option-item.music__option-item--active"
-          ).style.backgroundColor = "#787878";
-          $(".music__option-item.music__option-item--active").style.color =
-            "#fff";
-          $(".music-control__volume-input").style.backgroundColor =
-            "rgba(255, 255, 255, 0.3)";
-          $(".music-control__progress-input").style.backgroundColor =
-            "rgba(255, 255, 255, 0.3)";
-
-          $$(".js__main-color").forEach((item) => {
-            item.style.color = "#fff";
-          });
-          $$(".js__sub-color").forEach((item) => {
-            item.style.color = "rgba(255, 255, 255, 0.5)";
-          });
-          $$(".js__backgroundColor").forEach((item) => {
-            item.style.backgroundColor = "#3E3E3E";
-          });
-          $$(".js__border").forEach((item) => {
-            item.style.border = "2px solid #fff";
-          });
-        } else if (index == 2) {
-          backgroundIndex = 2;
-          $(
-            ".header"
-          ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
-          $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
-          $(".main").style.backgroundImage =
-            "url(./assets/img/background-theme/backroundThemes/2.jpg)";
-          $(".main-music-control").style.backgroundImage = "none";
-          $(".main-music-control").style.backgroundColor = "#051740";
-          $(".mobile-tab").style.backgroundColor = "#051740";
-          $(".sidebar__add-playlist").style.backgroundColor = "#132958";
-          $(".sidebar__add-playlist").style.borderTop =
-            "1px solid rgba(0, 0, 0, 0.1)";
-          $(".nextsong__option-wrapper").style.backgroundColor = "#1F3461";
-          $(".header__width-search-sub").style.backgroundColor = "#1F3461";
-          $(".header__width-search-sub").classList.add(
-            "header__width-search-sub--green"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--purple"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--white"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--gray"
-          );
-          $(".header__width-search").classList.remove(
-            "js__gray-backgroundColor"
-          );
-          $(".header__setting-list").style.backgroundColor = "#1F3461";
-          $(".theme-modal__body").style.backgroundColor = "#192F60";
-          $(".nextsong__option-wrapper-listplay").style.backgroundColor =
-            "#637191";
-          $(".main-sidebar").style.backgroundColor = "hsla(0,0%,100%,0.05)";
-          $(".header__width-search-input").classList.remove(
-            "header__width-search-input--white"
-          );
-          $(".header__width-search-input").classList.add(
-            "header__width-search-input--dark"
-          );
-          $(
-            ".music__option-item.music__option-item--active"
-          ).style.backgroundColor = "#637191";
-          $(".music__option-item.music__option-item--active").style.color =
-            "#fff";
-          $(".music-control__volume-input").style.backgroundColor =
-            "rgba(255, 255, 255, 0.3)";
-          $(".music-control__progress-input").style.backgroundColor =
-            "rgba(255, 255, 255, 0.3)";
-
-          $$(".js__main-color").forEach((item) => {
-            item.style.color = "#fff";
-          });
-          $$(".js__sub-color").forEach((item) => {
-            item.style.color = "rgba(255, 255, 255, 0.5)";
-          });
-          $$(".js__backgroundColor").forEach((item) => {
-            item.style.backgroundColor = "#1F3461";
-          });
-          $$(".js__border").forEach((item) => {
-            item.style.border = "2px solid #fff";
-          });
-        } else if (index == 3) {
-          backgroundIndex = 3;
-          $(
-            ".header"
-          ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
-          $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
-          $(".main").style.backgroundImage =
-            "url(./assets/img/background-theme/backroundThemes/3.jpg)";
-          $(".main-music-control").style.backgroundImage = "none";
-          $(".main-music-control").style.backgroundColor = "#D0CCC5";
-          $(".mobile-tab").style.backgroundColor = "#D0CCC5";
-          $(".sidebar__add-playlist").style.backgroundColor = "#DAD6D3";
-          $(".sidebar__add-playlist").style.borderTop =
-            "1px solid rgba(0, 0, 0, 0.1)";
-          $(".nextsong__option-wrapper").style.backgroundColor = "#DAD6D3";
-          $(".header__width-search-sub").style.backgroundColor = "#FFFFFE";
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--purple"
-          );
-          $(".header__width-search-sub").classList.add(
-            "header__width-search-sub--white"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--green"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--gray"
-          );
-          $(".header__setting-list").style.backgroundColor = "#FFFFFE";
-          $(".theme-modal__body").style.backgroundColor = "#E6E1DE";
-          $(".nextsong__option-wrapper-listplay").style.backgroundColor =
-            "#E5E2E0";
-          $(".main-sidebar").style.backgroundColor = "rgba(0, 0, 0, 0.05)";
-          $(".header__width-search-input").classList.add(
-            "header__width-search-input--white"
-          );
-          $(".header__width-search-input").classList.remove(
-            "header__width-search-input--dark"
-          );
-          $(".music-control__volume-input").style.backgroundColor =
-            "rgba(0, 0, 0, 0.3)";
-          $(".music-control__progress-input").style.backgroundColor =
-            "rgba(0, 0, 0, 0.3)";
-
-          $$(".js__main-color").forEach((item) => {
-            item.style.color = "#000";
-          });
-          $$(".js__sub-color").forEach((item) => {
-            item.style.color = "#696969";
-          });
-          $$(".js__backgroundColor").forEach((item) => {
-            item.style.backgroundColor = "#DAD6D3";
-          });
-          $$(".js__border").forEach((item) => {
-            item.style.border = "2px solid #000";
-          });
-          $(
-            ".music__option-item.music__option-item--active"
-          ).style.backgroundColor = "#E5E2E0";
-          $(".music__option-item.music__option-item--active").style.color =
-            "#000";
-        } else if (index == 4) {
-          backgroundIndex = 4;
-          $(
-            ".header"
-          ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
-          $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
-          $(".main").style.backgroundImage =
-            "url(./assets/img/background-theme/backroundThemes/4.jpg)";
-          $(".main-music-control").style.backgroundImage = "none";
-          $(".main-music-control").style.backgroundColor = "#B4D0D0";
-          $(".mobile-tab").style.backgroundColor = "#B4D0D0";
-          $(".sidebar__add-playlist").style.backgroundColor = "#C9E4E6";
-          $(".sidebar__add-playlist").style.borderTop =
-            "1px solid rgba(0, 0, 0, 0.1)";
-          $(".nextsong__option-wrapper").style.backgroundColor = "#C9E4E6";
-          $(".header__width-search-sub").style.backgroundColor = "#FFFFFE";
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--purple"
-          );
-          $(".header__width-search-sub").classList.add(
-            "header__width-search-sub--white"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--green"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--gray"
-          );
-          $(".header__width-search").classList.remove(
-            "js__gray-backgroundColor"
-          );
-          $(".header__setting-list").style.backgroundColor = "#FFFFFE";
-          $(".theme-modal__body").style.backgroundColor = "#C9E4E6";
-          $(".nextsong__option-wrapper-listplay").style.backgroundColor =
-            "#D9ECEE";
-          $(".main-sidebar").style.backgroundColor = "rgba(255, 255, 255, 0.3)";
-          $(".header__width-search-input").classList.add(
-            "header__width-search-input--white"
-          );
-          $(".header__width-search-input").classList.remove(
-            "header__width-search-input--dark"
-          );
-          $(".music-control__volume-input").style.backgroundColor =
-            "rgba(0, 0, 0, 0.3)";
-          $(".music-control__progress-input").style.backgroundColor =
-            "rgba(0, 0, 0, 0.3)";
-
-          $$(".js__main-color").forEach((item) => {
-            item.style.color = "#000";
-          });
-          $$(".js__sub-color").forEach((item) => {
-            item.style.color = "#696969";
-          });
-          $$(".js__backgroundColor").forEach((item) => {
-            item.style.backgroundColor = "#C9E4E6";
-          });
-          $$(".js__border").forEach((item) => {
-            item.style.border = "2px solid #000";
-          });
-          $(
-            ".music__option-item.music__option-item--active"
-          ).style.backgroundColor = "#D9ECEE";
-          $(".music__option-item.music__option-item--active").style.color =
-            "#000";
-        } else if (index == 5) {
-          backgroundIndex = 5;
-          $(
-            ".header"
-          ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
-          $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
-          $(".main").style.backgroundImage =
-            "url(./assets/img/background-theme/backroundThemes/5.jpg)";
-          $(".main-music-control").style.backgroundImage = "none";
-          $(".main-music-control").style.backgroundColor = "#F9C6C5";
-          $(".mobile-tab").style.backgroundColor = "#F9C6C5";
-          $(".sidebar__add-playlist").style.backgroundColor = "#F6E7E4";
-          $(".sidebar__add-playlist").style.borderTop =
-            "1px solid rgba(0, 0, 0, 0.1)";
-          $(".nextsong__option-wrapper").style.backgroundColor = "#E6D2CD";
-          $(".header__width-search-sub").style.backgroundColor = "#FFFFFE";
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--purple"
-          );
-          $(".header__width-search-sub").classList.add(
-            "header__width-search-sub--white"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--green"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--gray"
-          );
-          $(".header__width-search").classList.remove(
-            "js__gray-backgroundColor"
-          );
-          $(".header__setting-list").style.backgroundColor = "#FFFFFE";
-          $(".theme-modal__body").style.backgroundColor = "#F9C6C5";
-          $(".nextsong__option-wrapper-listplay").style.backgroundColor =
-            "#EEE0DC";
-          $(".main-sidebar").style.backgroundColor = "rgba(255, 255, 255, 0.3)";
-          $(".header__width-search-input").classList.add(
-            "header__width-search-input--white"
-          );
-          $(".header__width-search-input").classList.remove(
-            "header__width-search-input--dark"
-          );
-          $(
-            ".music__option-item.music__option-item--active"
-          ).style.backgroundColor = "#EEE0DC";
-          $(".music__option-item.music__option-item--active").style.color =
-            "#000";
-          $(".music-control__volume-input").style.backgroundColor =
-            "rgba(0, 0, 0, 0.3)";
-          $(".music-control__progress-input").style.backgroundColor =
-            "rgba(0, 0, 0, 0.3)";
-
-          $$(".js__main-color").forEach((item) => {
-            item.style.color = "#000";
-          });
-          $$(".js__sub-color").forEach((item) => {
-            item.style.color = "#696969";
-          });
-          $$(".js__backgroundColor").forEach((item) => {
-            item.style.backgroundColor = "#E6D2CD";
-          });
-          $$(".js__border").forEach((item) => {
-            item.style.border = "2px solid #000";
-          });
-        } else if (index == 6) {
-          backgroundIndex = 6;
-          $(
-            ".header"
-          ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
-          $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
-          $(".main").style.backgroundImage =
-            "url(./assets/img/background-theme/backroundThemes/6.jpg)";
-          $(".main-music-control").style.backgroundImage = "none";
-          $(".main-music-control").style.backgroundColor = "#C6C4D1";
-          $(".mobile-tab").style.backgroundColor = "#C6C4D1";
-          $(".sidebar__add-playlist").style.backgroundColor = "#B1B0BA";
-          $(".sidebar__add-playlist").style.borderTop =
-            "1px solid rgba(0, 0, 0, 0.1)";
-          $(".nextsong__option-wrapper").style.backgroundColor = "#B1B0BA";
-          $(".header__width-search-sub").style.backgroundColor = "#FFFFFE";
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--purple"
-          );
-          $(".header__width-search-sub").classList.add(
-            "header__width-search-sub--white"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--green"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--gray"
-          );
-          $(".header__width-search").classList.remove(
-            "js__gray-backgroundColor"
-          );
-          $(".header__setting-list").style.backgroundColor = "#FFFFFE";
-          $(".theme-modal__body").style.backgroundColor = "#E2E7F5";
-          $(".nextsong__option-wrapper-listplay").style.backgroundColor =
-            "#C9C8CF";
-          $(".main-sidebar").style.backgroundColor = "rgba(0,0,0,0.05)";
-          $(".header__width-search-input").classList.add(
-            "header__width-search-input--white"
-          );
-          $(".header__width-search-input").classList.remove(
-            "header__width-search-input--dark"
-          );
-          $(
-            ".music__option-item.music__option-item--active"
-          ).style.backgroundColor = "#C9C8CF";
-          $(".music__option-item.music__option-item--active").style.color =
-            "#000";
-          $(".music-control__volume-input").style.backgroundColor =
-            "rgba(0, 0, 0, 0.3)";
-          $(".music-control__progress-input").style.backgroundColor =
-            "rgba(0, 0, 0, 0.3)";
-
-          $$(".js__main-color").forEach((item) => {
-            item.style.color = "#000";
-          });
-          $$(".js__sub-color").forEach((item) => {
-            item.style.color = "#696969";
-          });
-          $$(".js__backgroundColor").forEach((item) => {
-            item.style.backgroundColor = "#B1B0BA";
-          });
-          $$(".js__border").forEach((item) => {
-            item.style.border = "2px solid #000";
-          });
-        } else if (index == 7) {
-          backgroundIndex = 7;
-          $(
-            ".header"
-          ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
-          $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
-          $(".main").style.backgroundImage =
-            "url(./assets/img/background-theme/backroundThemes/7.jpg)";
-          $(".main-music-control").style.backgroundImage = "none";
-          $(".main-music-control").style.backgroundColor = "#FFFFFF";
-          $(".mobile-tab").style.backgroundColor = "#FFFFFF";
-          $(".sidebar__add-playlist").style.backgroundColor = "#F2F2F2";
-          $(".sidebar__add-playlist").style.borderTop =
-            "1px solid rgba(0, 0, 0, 0.1)";
-          $(".nextsong__option-wrapper").style.backgroundColor = "#F2F2F2";
-          $(".header__width-search-sub").style.backgroundColor = "#FFFFFE";
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--purple"
-          );
-          $(".header__width-search-sub").classList.add(
-            "header__width-search-sub--white"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--green"
-          );
-          $(".header__width-search-sub").classList.remove(
-            "header__width-search-sub--gray"
-          );
-          $(".header__width-search").classList.remove(
-            "js__gray-backgroundColor"
-          );
-          $(".header__setting-list").style.backgroundColor = "#FFFFFE";
-          $(".theme-modal__body").style.backgroundColor = "#E6E1DE";
-          $(".nextsong__option-wrapper-listplay").style.backgroundColor =
-            "#FFFFFF";
-          $(".main-sidebar").style.backgroundColor = "rgba(0,0,0,0.05)";
-          $(".header__width-search-input").classList.add(
-            "header__width-search-input--white"
-          );
-          $(".header__width-search-input").classList.remove(
-            "header__width-search-input--dark"
-          );
-          $(
-            ".music__option-item.music__option-item--active"
-          ).style.backgroundColor = "#FFFFFF";
-          $(".music__option-item.music__option-item--active").style.color =
-            "#000";
-          $(".music-control__volume-input").style.backgroundColor =
-            "rgba(0, 0, 0, 0.3)";
-          $(".music-control__progress-input").style.backgroundColor =
-            "rgba(0, 0, 0, 0.3)";
-
-          $$(".js__main-color").forEach((item) => {
-            item.style.color = "#000";
-          });
-          $$(".js__sub-color").forEach((item) => {
-            item.style.color = "#696969";
-          });
-          $$(".js__backgroundColor").forEach((item) => {
-            item.style.backgroundColor = "#F2F2F2";
-          });
-          $$(".js__border").forEach((item) => {
-            item.style.border = "2px solid #000";
-          });
-        }
-
-        app.verifyOptionTextColor();
-      };
     });
   },
 
@@ -813,118 +191,6 @@ const app = {
                 </li>`;
     });
     playListElement.innerHTML = htmls.join("");
-  },
-
-  // RENDER LIST ZINGCHART
-  renderZingChart: function () {
-    const htmls = this.songsData.map((song, index) => {
-      return index < 10
-        ? `
-                <!-- songs-item-playing--active-onplay songs-item--active songs-item-playbtn--active -->
-                <li class="songs-item">
-                    <div class="songs-item-left">
-                        <span class="zingchart__item-left-stt ${
-                          index == 0
-                            ? "zingchart__item-first"
-                            : index == 1
-                            ? "zingchart__item-second"
-                            : index == 2
-                            ? "zingchart__item-third"
-                            : ""
-                        }">${index + 1}</span>
-                        <span class="zingchart__item-left-line js__main-color">-</span>
-                        <div style="background-image: url(${
-                          song.background
-                        });" class="songs-item-left-img">
-                            <div class="songs-item-left-img-playbtn"><i class="fas fa-play"></i></div>
-                            <div class="songs-item-left-img-playing-box">
-                                <img class = "songs-item-left-img-playing" src="./assets/img/songs/icon-playing.gif" alt="playing">
-                            </div>
-                        </div>
-
-                        <div class="songs-item-left-body">
-                            <h3 class="songs-item-left-body-name js__main-color">${
-                              song.name
-                            }</h3>
-                            <span class="songs-item-left-body-singer js__sub-color">${
-                              song.singer
-                            }</span>
-                        </div>
-                    </div>
-                    <div class="songs-item-center tablet-hiden mobile-hiden js__sub-color">
-                        <span>${song.name} (Remix)</span>
-                    </div>
-                    <div class="songs-item-right mobile-hiden">
-                        <span class="songs-item-right-mv ipad-air-hiden"><i class="fas fa-photo-video js__main-color"></i></span>
-                        <span class="songs-item-right-lyric ipad-air-hiden"><i class="fas fa-microphone js__main-color"></i></span>
-                        <span class="songs-item-right-tym">
-                            <i class="fas fa-heart songs-item-right-tym-first"></i>
-                            <i class="far fa-heart songs-item-right-tym-last"></i>
-                        </span>
-                        <span class="songs-item-right-duration js__sub-color">${
-                          song.duration
-                        }</span>
-                        <span class="songs-item-right-more js__main-color"><i class="fas fa-ellipsis-h"></i></span>
-                    </div>
-                </li>`
-        : "";
-    });
-    $(".js__zingchart__list").innerHTML = htmls.join("");
-  },
-
-  // RENDER LIST ZINGCHART MORE
-  renderZingChartMore: function () {
-    const htmls = this.songsData.map((song, index) => {
-      return `
-                <!-- songs-item-playing--active-onplay songs-item--active songs-item-playbtn--active -->
-                <li class="songs-item">
-                    <div class="songs-item-left">
-                        <span class="zingchart__item-left-stt ${
-                          index == 0
-                            ? "zingchart__item-first"
-                            : index == 1
-                            ? "zingchart__item-second"
-                            : index == 2
-                            ? "zingchart__item-third"
-                            : ""
-                        }">${index + 1}</span>
-                        <span class="zingchart__item-left-line">-</span>
-                        <div style="background-image: url(${
-                          song.background
-                        });" class="songs-item-left-img">
-                            <div class="songs-item-left-img-playbtn"><i class="fas fa-play"></i></div>
-                            <div class="songs-item-left-img-playing-box">
-                                <img class = "songs-item-left-img-playing" src="./assets/img/songs/icon-playing.gif" alt="playing">
-                            </div>
-                        </div>
-
-                        <div class="songs-item-left-body">
-                            <h3 class="songs-item-left-body-name js__main-color">${
-                              song.name
-                            }</h3>
-                            <span class="songs-item-left-body-singer js__sub-color">${
-                              song.singer
-                            }</span>
-                        </div>
-                    </div>
-                    <div class="songs-item-center tablet-hiden mobile-hiden js__sub-color">
-                        <span>${song.name} (Remix)</span>
-                    </div>
-                    <div class="songs-item-right mobile-hiden">
-                        <span class="songs-item-right-mv ipad-air-hiden"><i class="fas fa-photo-video js__main-color"></i></span>
-                        <span class="songs-item-right-lyric ipad-air-hiden"><i class="fas fa-microphone js__main-color"></i></span>
-                        <span class="songs-item-right-tym">
-                            <i class="fas fa-heart songs-item-right-tym-first"></i>
-                            <i class="far fa-heart songs-item-right-tym-last"></i>
-                        </span>
-                        <span class="songs-item-right-duration js__sub-color">${
-                          song.duration
-                        }</span>
-                        <span class="songs-item-right-more js__main-color"><i class="fas fa-ellipsis-h"></i></span>
-                    </div>
-                </li>`;
-    });
-    $(".js__zingchart__list").innerHTML = htmls.join("");
   },
 
   // RENDER HEADDING NEXT SONG
@@ -1072,16 +338,6 @@ const app = {
     }, 300);
   },
 
-  // KHI ACTIVE KHUẤT THÌ ĐƯA NEXT SONG ITEM ACTIVE LÊN VIEW
-  scrollToActiveNextSong: function () {
-    // setTimeout(() => {
-    //   $(".nextsong__fist-item-headding--active").scrollIntoView({
-    //     behavior: "smooth",
-    //     block: "nearest"
-    //   });
-    // }, 300);
-  },
-
   RandomSong: function () {
     let newIndex;
     do {
@@ -1090,21 +346,6 @@ const app = {
 
     this.currentIndex = newIndex;
     this.loadCurrentSong();
-  },
-
-  loadCurrentSong: function () {
-    nameSong.textContent = this.currentSong.name;
-    $(".mobile-player__body-now-name").textContent = this.currentSong.name;
-    nameSinger.textContent = this.currentSong.singer;
-    $(".mobile-player__body-now-singer").textContent = this.currentSong.singer;
-    $(
-      ".mobile-player__body-thumb"
-    ).style.backgroundImage = `url('${this.currentSong.background}')`;
-    $(
-      ".music-control__left-img"
-    ).style.backgroundImage = `url('${this.currentSong.background}')`;
-    this.displayDurationTime();
-    audio.src = this.currentSong.pathSong;
   },
 
   nextSong: function () {
@@ -1134,23 +375,7 @@ const app = {
 
   // HIỂN THỊ REMAIN TIME TIME VÀO PLAYER
   displayRemainTime: function () {
-    remainTime.textContent = this.formatTime(audio.currentTime);
-    // on mobile
-    $(".mobile-player__ctrl-progress-time-start").textContent = this.formatTime(
-      audio.currentTime
-    );
-  },
-
-  // HIỂN THỊ VÀ DURATION TIME VÀO PLAYER
-  displayDurationTime: function () {
-    // if (!audio.duration) {
-    //     durationTime.textContent = "00:00";
-    // } else {
-    //     durationTime.textContent = this.formatTime(audio.duration);
-    // }
-    durationTime.textContent = this.currentSong.duration;
-    $(".mobile-player__ctrl-progress-time-duration").textContent =
-      this.currentSong.duration;
+    
   },
 
   // render next song
@@ -1187,78 +412,30 @@ const app = {
     const actionHeartNextSongs = $$(".nextsong__item-action-heart");
     const nextSongBox = $(".nextsong__box");
 
-    var sliderIndex = 1;
     var sliderIndex1 = 1;
-    var sliderLenght = _this.songsData.length;
 
     // KHI BẤM VÀO PLAYER ON MOBILE THÌ HIỆN PLAYER TO TRÊN ĐIỆN THOẠI
-    $(".music-control__left").onclick = function () {
-      $(".mobile-player").classList.add("active");
-    };
 
-    $(".mobile-player__headding-close").onclick = function () {
-      $(".mobile-player").classList.remove("active");
-    };
-
-    // NHẤN MORE HIỂN THỊ 100 BÀI HÁT
-    $(".js__zingchart__100more").onclick = function () {
-      _this.renderZingChartMore();
-      this.style.display = "none";
-    };
 
     // CHUYỂN TAB CÁ NHÂN / KHÁM PHÁ / ZINGCHART
-    sideBarTabs.forEach((tab, index) => {
-      tab.onclick = function () {
-        $(".js__sidebar-tabs.sidebar__item--active").classList.remove(
-          "sidebar__item--active"
-        );
-        tab.classList.add("sidebar__item--active");
-        containerPanes[0].style.display = "none";
-        containerPanes[1].style.display = "none";
-        containerPanes[2].style.display = "none";
-        containerPanes[index].style.display = "block";
-      };
-    });
+    // sideBarTabs.forEach((tab, index) => {
+    //   tab.onclick = function () {
+    //     $(".js__sidebar-tabs.sidebar__item--active").classList.remove(
+    //       "sidebar__item--active"
+    //     );
+    //     tab.classList.add("sidebar__item--active");
+    //     containerPanes[0].style.display = "none";
+    //     containerPanes[1].style.display = "none";
+    //     containerPanes[2].style.display = "none";
+    //     containerPanes[index].style.display = "block";
+    //   };
+    // });
 
     // CHUYỂN TAB CÁ NHÂN / KHÁM PHÁ / ZINGCHART TRÊN MOBILE
-    $$(".js__mobile-tab__item").forEach((tab, index) => {
-      tab.onclick = function () {
-        $(".mobile-tab__item.active").classList.remove("active");
-        tab.classList.add("active");
-        containerPanes[0].style.display = "none";
-        containerPanes[1].style.display = "none";
-        containerPanes[2].style.display = "none";
-        containerPanes[index].style.display = "block";
-      };
-    });
+
 
     // chuyển tab option
-    tabs.forEach((tab, index) => {
-      const pane = panes[index];
-      $(".panes-item:not(.music__option-item--active)").style.backgroundColor =
-        "transparent";
-      themeItems[backgroundIndex].click();
-      _this.verifyOptionTextColor();
-      tab.onclick = function () {
-        $(".music__option-item.music__option-item--active").classList.remove(
-          "music__option-item--active"
-        );
-        tab.classList.add("music__option-item--active");
-        $(".panes-item.active").classList.remove("active");
-        tabs[0].style.backgroundColor = "transparent";
-        tabs[1].style.backgroundColor = "transparent";
-        tabs[2].style.backgroundColor = "transparent";
-        tabs[3].style.backgroundColor = "transparent";
-        tab.style.backgroundColor = `var(--option-color-${backgroundIndex})`;
-        pane.classList.add("active");
-        // if (index === 1) {
-        //     _this.renderPlayList1($('.option-music-list'),_this.songsData);
-        // }
-        $(".music__option-item.music__option-item--active").classList.remove(
-          "js__main-color"
-        );
-      };
-    });
+
 
     // khi mới mở web thì sẽ chọn hightlight dòng đầu tiên
     songItems[this.currentIndex].classList.add("songs-item-playbtn--active");
@@ -1275,97 +452,21 @@ const app = {
     };
 
     // BẬT TĂT MUTE Ở VOLUME
-    volumeIcon.onclick = function () {
-      _this.isMute = !_this.isMute;
-      volumeIcon.classList.toggle("music-control__right--active", _this.isMute);
-      if (_this.isMute) {
-        audio.volume = 0;
-        volumeProgress.value = 0;
-      } else {
-        audio.volume = _this.volume / 100;
-        volumeProgress.value = _this.volume;
-      }
-    };
+    // volumeIcon.onclick = function () {
+    //   _this.isMute = !_this.isMute;
+    //   volumeIcon.classList.toggle("music-control__right--active", _this.isMute);
+    //   if (_this.isMute) {
+    //     audio.volume = 0;
+    //     volumeProgress.value = 0;
+    //   } else {
+    //     audio.volume = _this.volume / 100;
+    //     volumeProgress.value = _this.volume;
+    //   }
+    // };
 
     // TĂNG GIẢM ÂM LƯỢNG
-    volumeProgress.onchange = function (e) {
-      _this.volume = e.target.value;
-      audio.volume = e.target.value / 100;
-      if (e.target.value == 0) {
-        volumeIcon.classList.add("music-control__right--active");
-        _this.isMute = true;
-      } else {
-        volumeIcon.classList.remove("music-control__right--active");
-        _this.isMute = false;
-      }
-    };
 
-    // XỬ LÝ CD QUAY/DỪNG
-    const cdThumbAnimate = cdThumb.animate([{ transform: "rotate(360deg)" }], {
-      duration: 10000, // 10 seconds
-      iterations: Infinity,
-    });
-    cdThumbAnimate.pause();
 
-    // XỬ LÝ CD QUAY/DỪNG TO TRÊN MOBILE
-    const cdThumbAnimateMobile = $(".mobile-player__body-thumb").animate(
-      [{ transform: "rotate(360deg)" }],
-      {
-        duration: 10000, // 10 seconds
-        iterations: Infinity,
-      }
-    );
-    cdThumbAnimateMobile.pause();
-
-    //   LÀM SLIDER BÊN TAP CÁ NHÂN
-    changeImage = function () {
-      sliderItems.forEach((item, index) => {
-        // index == sliderIndex ? sliderItems[index].classList.replace('option-all__song-slider-img-third','option-all__song-slider-img-first') : index == sliderIndex + 1 ?  sliderItems[index].classList.replace('option-all__song-slider-img-third','option-all__song-slider-img-second'):sliderItems[index].classList.replace('option-all__song-slider-img-third','option-all__song-slider-img-third');
-        if (index == sliderIndex) {
-          sliderItems[index].classList.replace(
-            "option-all__song-slider-img-third",
-            "option-all__song-slider-img-first"
-          );
-          sliderItems[index].classList.replace(
-            "option-all__song-slider-img-second",
-            "option-all__song-slider-img-first"
-          );
-        } else if (index == sliderIndex + 1) {
-          sliderItems[index].classList.replace(
-            "option-all__song-slider-img-first",
-            "option-all__song-slider-img-second"
-          );
-          sliderItems[index].classList.replace(
-            "option-all__song-slider-img-third",
-            "option-all__song-slider-img-second"
-          );
-        } else {
-          sliderItems[index].classList.replace(
-            "option-all__song-slider-img-first",
-            "option-all__song-slider-img-third"
-          );
-          sliderItems[index].classList.replace(
-            "option-all__song-slider-img-second",
-            "option-all__song-slider-img-third"
-          );
-        }
-        if (sliderIndex == sliderLenght - 1) {
-          sliderItems[0].classList.replace(
-            "option-all__song-slider-img-first",
-            "option-all__song-slider-img-second"
-          );
-          sliderItems[0].classList.replace(
-            "option-all__song-slider-img-third",
-            "option-all__song-slider-img-second"
-          );
-        }
-      });
-      sliderIndex++;
-      if (sliderIndex >= sliderLenght) {
-        sliderIndex = 0;
-      }
-    };
-    setInterval(changeImage, 2000);
 
     //   LÀM SLIDER BÊN TAP KHÁM PHÁ
     changeImage1Replate = function () {
@@ -1509,13 +610,13 @@ const app = {
 
       _this.isPlaying = true;
       // player.classList.add("playing");
-      cdThumbAnimate.play();
-      cdThumbAnimateMobile.play();
-      playBtn.classList.add("music-control__icon-play--active");
-      $(".js__mobile-player__ctrl-icon").classList.add(
-        "music-control__icon-play--active"
-      );
-      thunbPlayerBox.style.transform = "translateX(20px)";
+      // cdThumbAnimate.play();
+      // cdThumbAnimateMobile.play();
+      // playBtn.classList.add("music-control__icon-play--active");
+      // $(".js__mobile-player__ctrl-icon").classList.add(
+      //   "music-control__icon-play--active"
+      // );
+      // thunbPlayerBox.style.transform = "translateX(20px)";
 
       songItems[_this.currentIndex].classList.add(
         "songs-item-playing--active-onplay"
@@ -1533,8 +634,6 @@ const app = {
         "songs-item-playbtn--active"
       );
 
-      // songItemsOption1[_this.currentIndex].classList.add('songs-item-playing--active-onplay');
-
       const nextSongItems = $$(".nextsong__item");
       nextSongItems[_this.currentIndex].classList.add(
         "nextsong__fist-item-headding--active"
@@ -1547,13 +646,13 @@ const app = {
     // KHI SONG BỊ PAUSE
     audio.onpause = function () {
       _this.isPlaying = false;
-      cdThumbAnimate.pause();
-      cdThumbAnimateMobile.pause();
-      playBtn.classList.remove("music-control__icon-play--active");
-      $(".js__mobile-player__ctrl-icon").classList.remove(
-        "music-control__icon-play--active"
-      );
-      thunbPlayerBox.style.transform = "translateX(0)";
+      // cdThumbAnimate.pause();
+      // cdThumbAnimateMobile.pause();
+      // playBtn.classList.remove("music-control__icon-play--active");
+      // $(".js__mobile-player__ctrl-icon").classList.remove(
+      //   "music-control__icon-play--active"
+      // );
+      // thunbPlayerBox.style.transform = "translateX(0)";
       songItems[_this.currentIndex].classList.remove(
         "songs-item-playing--active-onplay"
       );
@@ -1574,28 +673,28 @@ const app = {
     };
 
     // KHI TIẾN ĐỘ BÀI HÁT THAY ĐỔI
-    audio.ontimeupdate = function () {
-      if (audio.duration) {
-        const progressPercent = Math.floor(
-          (audio.currentTime / audio.duration) * 100
-        );
-        progress.value = progressPercent;
-        // on mobile
-        $("#progress2").value = progressPercent;
-      }
-      _this.displayRemainTime();
-    };
+    // audio.ontimeupdate = function () {
+    //   if (audio.duration) {
+    //     const progressPercent = Math.floor(
+    //       (audio.currentTime / audio.duration) * 100
+    //     );
+    //     progress.value = progressPercent;
+    //     // on mobile
+    //     $("#progress2").value = progressPercent;
+    //   }
+    //   _this.displayRemainTime();
+    // };
 
-    // KHI TUA SONG
-    progress.onchange = function (e) {
-      const seekTime = (audio.duration / 100) * e.target.value;
-      audio.currentTime = seekTime;
-    };
-    // KHI TUA SONG ON MOBILE
-    $("#progress2").onchange = function (e) {
-      const seekTime = (audio.duration / 100) * e.target.value;
-      audio.currentTime = seekTime;
-    };
+    // // KHI TUA SONG
+    // progress.onchange = function (e) {
+    //   const seekTime = (audio.duration / 100) * e.target.value;
+    //   audio.currentTime = seekTime;
+    // };
+    // // KHI TUA SONG ON MOBILE
+    // $("#progress2").onchange = function (e) {
+    //   const seekTime = (audio.duration / 100) * e.target.value;
+    //   audio.currentTime = seekTime;
+    // };
 
     // XOÁ CÁC THUỘC TÍNH KHI ACTIVE CŨ
     deleteActive = function () {
@@ -2129,7 +1228,7 @@ const app = {
     // render next song start
     this.renderNextSongHeaddingStart(nextSongHeadding, this.songsData);
     // render zingchart
-    this.renderZingChart();
+    // this.renderZingChart();
 
     // Define các thuộc tính cho object
     this.defineProperties();
@@ -2140,13 +1239,462 @@ const app = {
     // hiển thị thời gian chạy và thời lượng của audio hiện tại
     this.displayDurationTime();
 
-    // theme
-    this.applyTheme();
-
     this.loadCurrentSong();
 
     // this.musicNote();
   },
 };
 
-app.start();
+const applyTheme = () => {
+  themeItems.forEach((themeItem, index) => {
+    themeItem.onclick = function () {
+      if (index == 0) {
+        backgroundIndex = 0;
+        $(
+          ".header"
+        ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
+        $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
+        $(
+          ".header"
+        ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
+        $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
+        $(".main").style.backgroundImage =
+          "url(./assets/img/background-theme/backroundThemes/0.svg)";
+        $(".main-music-control").style.backgroundImage = "";
+        $(".main-music-control").style.backgroundColor = "#37075D";
+        $(".mobile-tab").style.backgroundColor = "#37075D";
+        $(".sidebar__add-playlist").style.backgroundColor = "#411465";
+        $(".sidebar__add-playlist").style.borderTop =
+          "1px solid rgba(255, 255, 255, 0.1)";
+        $(".nextsong__option-wrapper").style.backgroundColor = "#4B206E";
+        $(".header__width-search-sub").style.backgroundColor = "#6A39AF";
+        $(".header__width-search-sub").classList.add(
+          "header__width-search-sub--purple"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--white"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--green"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--gray"
+        );
+        $(".header__width-search").classList.remove("js__gray-backgroundColor");
+        $(".header__setting-list").style.backgroundColor = "#6A39AF";
+        $(".theme-modal__body").style.backgroundColor = "#6A39AF";
+        $(".nextsong__option-wrapper-listplay").style.backgroundColor =
+          "#816399";
+        $(".main-sidebar").style.backgroundColor = "hsla(0,0%,100%,0.05)";
+        $(".header__width-search-input").classList.remove(
+          "header__width-search-input--white"
+        );
+        $(".header__width-search-input").classList.add(
+          "header__width-search-input--dark"
+        );
+        $(
+          ".music__option-item.music__option-item--active"
+        ).style.backgroundColor = "#816399";
+        $(".music__option-item.music__option-item--active").style.color =
+          "#fff";
+        $(".music-control__volume-input").style.backgroundColor =
+          "rgba(255, 255, 255, 0.3)";
+        $(".music-control__progress-input").style.backgroundColor =
+          "rgba(255, 255, 255, 0.3)";
+
+        $$(".js__main-color").forEach((item) => {
+          item.style.color = "#fff";
+        });
+        $$(".js__sub-color").forEach((item) => {
+          item.style.color = "rgba(255, 255, 255, 0.5)";
+        });
+        $$(".js__backgroundColor").forEach((item) => {
+          item.style.backgroundColor = "rgba(255, 255, 255, 0.1)";
+        });
+        $$(".js__border").forEach((item) => {
+          item.style.border = "2px solid #fff";
+        });
+      } else if (index == 1) {
+        backgroundIndex = 1;
+        $(
+          ".header"
+        ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
+        $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
+        $(".main").style.backgroundImage =
+          "url(./assets/img/background-theme/backroundThemes/1.jpg)";
+        $(".main-music-control").style.backgroundImage = "none";
+        $(".main-music-control").style.backgroundColor = "#202020";
+        $(".mobile-tab").style.backgroundColor = "#202020";
+        $(".sidebar__add-playlist").style.backgroundColor = "#333333";
+        $(".sidebar__add-playlist").style.borderTop =
+          "1px solid rgba(0, 0, 0, 0.1)";
+        $(".nextsong__option-wrapper").style.backgroundColor = "#3E3E3E";
+        $(".header__width-search-sub").style.backgroundColor = "#3E3E3E";
+        $(".header__width-search-sub").classList.add(
+          "header__width-search-sub--gray"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--purple"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--white"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--green"
+        );
+        $(".header__width-search").classList.remove("js__gray-backgroundColor");
+        $(".header__setting-list").style.backgroundColor = "#3E3E3E";
+        $(".theme-modal__body").style.backgroundColor = "#3D3D3D";
+        $(".nextsong__option-wrapper-listplay").style.backgroundColor =
+          "#787878";
+        $(".main-sidebar").style.backgroundColor = "hsla(0,0%,100%,0.05)";
+        $(".header__width-search-input").classList.remove(
+          "header__width-search-input--white"
+        );
+        $(".header__width-search-input").classList.add(
+          "header__width-search-input--dark"
+        );
+        $(
+          ".music__option-item.music__option-item--active"
+        ).style.backgroundColor = "#787878";
+        $(".music__option-item.music__option-item--active").style.color =
+          "#fff";
+        $(".music-control__volume-input").style.backgroundColor =
+          "rgba(255, 255, 255, 0.3)";
+        $(".music-control__progress-input").style.backgroundColor =
+          "rgba(255, 255, 255, 0.3)";
+
+        $$(".js__main-color").forEach((item) => {
+          item.style.color = "#fff";
+        });
+        $$(".js__sub-color").forEach((item) => {
+          item.style.color = "rgba(255, 255, 255, 0.5)";
+        });
+        $$(".js__backgroundColor").forEach((item) => {
+          item.style.backgroundColor = "#3E3E3E";
+        });
+        $$(".js__border").forEach((item) => {
+          item.style.border = "2px solid #fff";
+        });
+      } else if (index == 2) {
+        backgroundIndex = 2;
+        $(
+          ".header"
+        ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
+        $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
+        $(".main").style.backgroundImage =
+          "url(./assets/img/background-theme/backroundThemes/2.jpg)";
+        $(".main-music-control").style.backgroundImage = "none";
+        $(".main-music-control").style.backgroundColor = "#051740";
+        $(".mobile-tab").style.backgroundColor = "#051740";
+        $(".sidebar__add-playlist").style.backgroundColor = "#132958";
+        $(".sidebar__add-playlist").style.borderTop =
+          "1px solid rgba(0, 0, 0, 0.1)";
+        $(".nextsong__option-wrapper").style.backgroundColor = "#1F3461";
+        $(".header__width-search-sub").style.backgroundColor = "#1F3461";
+        $(".header__width-search-sub").classList.add(
+          "header__width-search-sub--green"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--purple"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--white"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--gray"
+        );
+        $(".header__width-search").classList.remove("js__gray-backgroundColor");
+        $(".header__setting-list").style.backgroundColor = "#1F3461";
+        $(".theme-modal__body").style.backgroundColor = "#192F60";
+        $(".nextsong__option-wrapper-listplay").style.backgroundColor =
+          "#637191";
+        $(".main-sidebar").style.backgroundColor = "hsla(0,0%,100%,0.05)";
+        $(".header__width-search-input").classList.remove(
+          "header__width-search-input--white"
+        );
+        $(".header__width-search-input").classList.add(
+          "header__width-search-input--dark"
+        );
+        $(
+          ".music__option-item.music__option-item--active"
+        ).style.backgroundColor = "#637191";
+        $(".music__option-item.music__option-item--active").style.color =
+          "#fff";
+        $(".music-control__volume-input").style.backgroundColor =
+          "rgba(255, 255, 255, 0.3)";
+        $(".music-control__progress-input").style.backgroundColor =
+          "rgba(255, 255, 255, 0.3)";
+
+        $$(".js__main-color").forEach((item) => {
+          item.style.color = "#fff";
+        });
+        $$(".js__sub-color").forEach((item) => {
+          item.style.color = "rgba(255, 255, 255, 0.5)";
+        });
+        $$(".js__backgroundColor").forEach((item) => {
+          item.style.backgroundColor = "#1F3461";
+        });
+        $$(".js__border").forEach((item) => {
+          item.style.border = "2px solid #fff";
+        });
+      } else if (index == 3) {
+        backgroundIndex = 3;
+        $(
+          ".header"
+        ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
+        $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
+        $(".main").style.backgroundImage =
+          "url(./assets/img/background-theme/backroundThemes/3.jpg)";
+        $(".main-music-control").style.backgroundImage = "none";
+        $(".main-music-control").style.backgroundColor = "#D0CCC5";
+        $(".mobile-tab").style.backgroundColor = "#D0CCC5";
+        $(".sidebar__add-playlist").style.backgroundColor = "#DAD6D3";
+        $(".sidebar__add-playlist").style.borderTop =
+          "1px solid rgba(0, 0, 0, 0.1)";
+        $(".nextsong__option-wrapper").style.backgroundColor = "#DAD6D3";
+        $(".header__width-search-sub").style.backgroundColor = "#FFFFFE";
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--purple"
+        );
+        $(".header__width-search-sub").classList.add(
+          "header__width-search-sub--white"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--green"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--gray"
+        );
+        $(".header__setting-list").style.backgroundColor = "#FFFFFE";
+        $(".theme-modal__body").style.backgroundColor = "#E6E1DE";
+        $(".nextsong__option-wrapper-listplay").style.backgroundColor =
+          "#E5E2E0";
+        $(".main-sidebar").style.backgroundColor = "rgba(0, 0, 0, 0.05)";
+        $(".header__width-search-input").classList.add(
+          "header__width-search-input--white"
+        );
+        $(".header__width-search-input").classList.remove(
+          "header__width-search-input--dark"
+        );
+        $(".music-control__volume-input").style.backgroundColor =
+          "rgba(0, 0, 0, 0.3)";
+        $(".music-control__progress-input").style.backgroundColor =
+          "rgba(0, 0, 0, 0.3)";
+
+        $$(".js__main-color").forEach((item) => {
+          item.style.color = "#000";
+        });
+        $$(".js__sub-color").forEach((item) => {
+          item.style.color = "#696969";
+        });
+        $$(".js__backgroundColor").forEach((item) => {
+          item.style.backgroundColor = "#DAD6D3";
+        });
+        $$(".js__border").forEach((item) => {
+          item.style.border = "2px solid #000";
+        });
+        $(
+          ".music__option-item.music__option-item--active"
+        ).style.backgroundColor = "#E5E2E0";
+        $(".music__option-item.music__option-item--active").style.color =
+          "#000";
+      } else if (index == 4) {
+        backgroundIndex = 4;
+        $(
+          ".header"
+        ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
+        $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
+        $(".main").style.backgroundImage =
+          "url(./assets/img/background-theme/backroundThemes/4.jpg)";
+        $(".main-music-control").style.backgroundImage = "none";
+        $(".main-music-control").style.backgroundColor = "#B4D0D0";
+        $(".mobile-tab").style.backgroundColor = "#B4D0D0";
+        $(".sidebar__add-playlist").style.backgroundColor = "#C9E4E6";
+        $(".sidebar__add-playlist").style.borderTop =
+          "1px solid rgba(0, 0, 0, 0.1)";
+        $(".nextsong__option-wrapper").style.backgroundColor = "#C9E4E6";
+        $(".header__width-search-sub").style.backgroundColor = "#FFFFFE";
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--purple"
+        );
+        $(".header__width-search-sub").classList.add(
+          "header__width-search-sub--white"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--green"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--gray"
+        );
+        $(".header__setting-list").style.backgroundColor = "#FFFFFE";
+        $(".theme-modal__body").style.backgroundColor = "#C9E4E6";
+        $(".nextsong__option-wrapper-listplay").style.backgroundColor =
+          "#D9ECEE";
+        $(".main-sidebar").style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+        $(".header__width-search-input").classList.add(
+          "header__width-search-input--white"
+        );
+        $(".header__width-search-input").classList.remove(
+          "header__width-search-input--dark"
+        );
+        $(
+          ".music__option-item.music__option-item--active"
+        ).style.backgroundColor = "#D9ECEE";
+        $(".music__option-item.music__option-item--active").style.color =
+          "#000";
+        $(".music-control__volume-input").style.backgroundColor =
+          "rgba(0, 0, 0, 0.3)";
+        $(".music-control__progress-input").style.backgroundColor =
+          "rgba(0, 0, 0, 0.3)";
+
+        $$(".js__main-color").forEach((item) => {
+          item.style.color = "#000";
+        });
+        $$(".js__sub-color").forEach((item) => {
+          item.style.color = "#696969";
+        });
+        $$(".js__backgroundColor").forEach((item) => {
+          item.style.backgroundColor = "#C9E4E6";
+        });
+        $$(".js__border").forEach((item) => {
+          item.style.border = "2px solid #000";
+        });
+        $(
+          ".music__option-item.music__option-item--active"
+        ).style.backgroundColor = "#D9ECEE";
+        $(".music__option-item.music__option-item--active").style.color =
+          "#000";
+      } else if (index == 5) {
+        backgroundIndex = 5;
+        $(
+          ".header"
+        ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
+        $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
+        $(".main").style.backgroundImage =
+          "url(./assets/img/background-theme/backroundThemes/5.jpg)";
+        $(".main-music-control").style.backgroundImage = "none";
+        $(".main-music-control").style.backgroundColor = "#F9C6C5";
+        $(".mobile-tab").style.backgroundColor = "#F9C6C5";
+        $(".sidebar__add-playlist").style.backgroundColor = "#F6E7E4";
+        $(".sidebar__add-playlist").style.borderTop =
+          "1px solid rgba(0, 0, 0, 0.1)";
+        $(".nextsong__option-wrapper").style.backgroundColor = "#E6D2CD";
+        $(".header__width-search-sub").style.backgroundColor = "#FFFFFE";
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--purple"
+        );
+        $(".header__width-search-sub").classList.add(
+          "header__width-search-sub--white"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--green"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--gray"
+        );
+        $(".header__width-search").classList.remove("js__gray-backgroundColor");
+        $(".header__setting-list").style.backgroundColor = "#FFFFFE";
+        $(".theme-modal__body").style.backgroundColor = "#F9C6C5";
+        $(".nextsong__option-wrapper-listplay").style.backgroundColor =
+          "#EEE0DC";
+        $(".main-sidebar").style.backgroundColor = "rgba(255, 255, 255, 0.3)";
+        $(".header__width-search-input").classList.add(
+          "header__width-search-input--white"
+        );
+        $(".header__width-search-input").classList.remove(
+          "header__width-search-input--dark"
+        );
+        $(
+          ".music__option-item.music__option-item--active"
+        ).style.backgroundColor = "#EEE0DC";
+        $(".music__option-item.music__option-item--active").style.color =
+          "#000";
+        $(".music-control__volume-input").style.backgroundColor =
+          "rgba(0, 0, 0, 0.3)";
+        $(".music-control__progress-input").style.backgroundColor =
+          "rgba(0, 0, 0, 0.3)";
+
+        $$(".js__main-color").forEach((item) => {
+          item.style.color = "#000";
+        });
+        $$(".js__sub-color").forEach((item) => {
+          item.style.color = "#696969";
+        });
+        $$(".js__backgroundColor").forEach((item) => {
+          item.style.backgroundColor = "#E6D2CD";
+        });
+        $$(".js__border").forEach((item) => {
+          item.style.border = "2px solid #000";
+        });
+      } else if (index == 6) {
+        backgroundIndex = 6;
+        $(
+          ".header"
+        ).style.backgroundColor = `var(--header-color-${backgroundIndex})`;
+        $(".header").style.boxShadow = "0 3px 5px rgba(0,0,0,0.1)";
+        $(".main").style.backgroundImage =
+          "url(./assets/img/background-theme/backroundThemes/6.jpg)";
+        $(".main-music-control").style.backgroundImage = "none";
+        $(".main-music-control").style.backgroundColor = "#C6C4D1";
+        $(".mobile-tab").style.backgroundColor = "#C6C4D1";
+        $(".sidebar__add-playlist").style.backgroundColor = "#B1B0BA";
+        $(".sidebar__add-playlist").style.borderTop =
+          "1px solid rgba(0, 0, 0, 0.1)";
+        $(".nextsong__option-wrapper").style.backgroundColor = "#A7A6B0";
+        $(".header__width-search-sub").style.backgroundColor = "#F7F6F9";
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--purple"
+        );
+        $(".header__width-search-sub").classList.add(
+          "header__width-search-sub--white"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--green"
+        );
+        $(".header__width-search-sub").classList.remove(
+          "header__width-search-sub--gray"
+        );
+        $(".header__width-search").classList.remove("js__gray-backgroundColor");
+        $(".header__setting-list").style.backgroundColor = "#F7F6F9";
+        $(".theme-modal__body").style.backgroundColor = "#D5D3DD";
+        $(".nextsong__option-wrapper-listplay").style.backgroundColor =
+          "#CAC8D2";
+        $(".main-sidebar").style.backgroundColor = "rgba(0, 0, 0, 0.03)";
+        $(".header__width-search-input").classList.add(
+          "header__width-search-input--white"
+        );
+        $(".header__width-search-input").classList.remove(
+          "header__width-search-input--dark"
+        );
+        $(
+          ".music__option-item.music__option-item--active"
+        ).style.backgroundColor = "#CAC8D2";
+        $(".music__option-item.music__option-item--active").style.color =
+          "#000";
+        $(".music-control__volume-input").style.backgroundColor =
+          "rgba(0, 0, 0, 0.3)";
+        $(".music-control__progress-input").style.backgroundColor =
+          "rgba(0, 0, 0, 0.3)";
+
+        $$(".js__main-color").forEach((item) => {
+          item.style.color = "#000";
+        });
+        $$(".js__sub-color").forEach((item) => {
+          item.style.color = "#696969";
+        });
+        $$(".js__backgroundColor").forEach((item) => {
+          item.style.backgroundColor = "#C5C3CD";
+        });
+        $$(".js__border").forEach((item) => {
+          item.style.border = "2px solid #000";
+        });
+      }
+    };
+  });
+};
+
+applyTheme();
+
+
+//app.start();

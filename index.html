@@ -10,13 +10,13 @@
     <!-- reset css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- css grid để kết hợp chia khung và responsive -->
-    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/grid.css" type="text/css">
     <!-- css mấy cái chung ban đầu -->
-    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/base.css" type="text/css">
     <!-- css chính -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/main.css" type="text/css">
     <!-- css để responsive trên các thiết bị -->
-    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css" type="text/css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- icon fontawesome -->
@@ -171,7 +171,7 @@
                             </div>
                             <div class="header__user hover">
                                 <a href="#">
-                                    <img src="./assets/img/header/user/0.jpg" alt="user" class="header__user-img">
+                                    <img src="./assets/img/header/user/1.jpg" alt="user" class="header__user-img">
                                 </a>
                             </div>
                         </div>
@@ -181,9 +181,9 @@
                 <div class="main-container-pertional js__container-panes active">
                     <div class="profile">
                         <a href="#">
-                            <img src="./assets/img/header/user/0.jpg" alt="avata" class="profile__img">
+                            <img src="./assets/img/header/user/1.jpg" alt="avata" class="profile__img">
                         </a>
-                        <span class="profile__name js__main-color">Văn Sơnn</span>
+                        <span class="profile__name js__main-color">Name</span>
                     </div>
 
                     <div class="music__option">
@@ -219,43 +219,6 @@
                                 </div>
                             </div>
                             <div class="grid row">
-                                <!-- <div class="col l-3 m-0 s-0">
-                                    <div class="option-all__song-slider">
-                                        <img src="./assets/img/slider/0.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-first">
-                                        <img src="./assets/img/slider/1.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-second">
-                                        <img src="./assets/img/slider/2.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                        <img src="./assets/img/slider/3.jpg" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                        <img src="./assets/img/slider/4.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                        <img src="./assets/img/slider/5.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                        <img src="./assets/img/slider/6.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                        <img src="./assets/img/slider/7.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                        <img src="./assets/img/slider/8.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                        <img src="./assets/img/slider/9.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                        <img src="./assets/img/slider/10.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                        <img src="./assets/img/slider/11.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                        <img src="./assets/img/slider/12.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                        <img src="./assets/img/slider/13.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                        <img src="./assets/img/slider/14.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                        <img src="./assets/img/slider/15.webp" alt="anh slider"
-                                            class="option-all__song-slider-img option-all__song-slider-img-third">
-                                    </div>
-                                </div> -->
-
                                 <div class="col m-12 s-12">
                                     <div class="option-all__songs">
                                         <ul class="option-all__songs-list songs-list">
@@ -288,7 +251,7 @@
                                         <div class="dialog_body">
                                             <a href="#" class="btn_close">&times;</a>
                                             <h3>Create new playlist</h3>
-                                            <input type="text" placeholder="Name playlist">
+                                            <input class="playlistName" type="text" placeholder="Name playlist">
                                             <div class="dialog_content">
                                                 <p>Public</p>
                                                 <label class="switch">
@@ -296,73 +259,15 @@
                                                     <span class="slider round"></span>
                                                 </label>
                                             </div>
-                                            <button>Create</button>
+                                            <button class="btn_create_playlist">Create</button>
                                         </div>
-                                    </div>
-                                    <div class="col l-2-4 m-3 s-6 mobile-margin-bot-10px">
-                                        <li class="option-all__playlist-item">
-                                            <div class="option-all__playlist-item-img-wrapper">
-                                                <div class="option-all__playlist-item-img-wrapper-action">
-                                                    <i
-                                                        class="fas fa-times option-all__playlist-item-img-wrapper-action-icon1"></i>
-                                                    <i
-                                                        class="fas fa-play option-all__playlist-item-img-wrapper-action-icon2"></i>
-                                                    <i
-                                                        class="fas fa-ellipsis-h option-all__playlist-item-img-wrapper-action-icon3"></i>
-                                                </div>
-                                                <div class="option-all__playlist-item-img"
-                                                    style="background-image: url(./assets/img/playlist/1.webp);"></div>
-                                            </div>
-                                            <div class="option-all__playlist-item-content">
-                                                <div class="option-all__playlist-item-content-name1 js__main-color">
-                                                    Replay</div>
-                                                <div class="option-all__playlist-item-content-name2 js__sub-color">Văn
-                                                    Sơn Nguyễn</div>
-                                            </div>
-                                        </li>
                                     </div>
                                 </div>
                             </ul>
                         </div>
 
                         <!-- option-all__mv -->
-                        <div class="option-all__playlist option-all__margin_bot">
-                            <div class="option-heading option-all__playlist-heading">
-                                <h3 class="option-heading-name js__main-color">MV</h3>
-                                <div class="more-list mobile-hiden">
-                                    <span class="js__main-color">Tất cả</span>
-                                    <i class="fas fa-chevron-right js__main-color"></i>
-                                </div>
-                            </div>
-                            <ul class="option-all__playlist-list">
-                                <div class="row row_mv_user">
-                                    <div class="col l-4 m-4 s-12 mobile-margin-bot-30px">
-                                        <li class="option-all__playlist-item">
-                                            <div class="option-all__playlist-item-img-wrapper">
-                                                <div class="option-all__playlist-item-img-wrapper-action">
-                                                    <!-- <i class="fas fa-times option-all__playlist-item-img-wrapper-action-icon1"></i> -->
-                                                    <i
-                                                        class="fas fa-play option-all__playlist-item-img-wrapper-action-icon2"></i>
-                                                    <!-- <i class="fas fa-ellipsis-h option-all__playlist-item-img-wrapper-action-icon3"></i> -->
-                                                </div>
-                                                <div class="option-all__playlist-item-img option-all__playlist-item-img-mv"
-                                                    style="background-image: url(./assets/img/mv/1.webp);"></div>
-                                            </div>
-                                            <div class="option-all__playlist-item-content-mv">
-                                                <img src="./assets/img/mv/icon1.jpg" alt="thanh hung"
-                                                    class="option-all__playlist-item-content-img">
-                                                <div class="option-all__playlist-item-content-name">
-                                                    <div class="option-all__playlist-item-content-name1 js__main-color">
-                                                        Thay Tôi Yêu Cô Ấy</div>
-                                                    <div class="option-all__playlist-item-content-name2 js__sub-color">
-                                                        Thanh Hưng</div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </div>
-                                </div>
-                            </ul>
-                        </div>
+
                         <!-- option-singer -->
                         <div class="option-all__playlist option-all__margin_bot">
                             <div class="option-heading option-all__playlist-heading">
@@ -441,34 +346,30 @@
                                 </div>
                             </div>
                             <ul class="option-all__playlist-list">
-                                <div class="row">
-                                    <div class="col l-2-4 m-3 s-6 mobile-margin-bot-30px">
-                                        <li class="option-all__playlist-item0">
-                                            <i class="fas fa-plus"></i>
-                                            <span>Tạo playlist mới</span>
-                                        </li>
+                                <div class="row row_playlist_user">
+                                    <div class="col l-2-4 m-3 s-6 mobile-margin-bot-10px">
+                                        <a href="#playlist_dialog_1" style="text-decoration: none; color: #fff;">
+                                            <li class="option-all__playlist-item0">
+                                                <i class="fas fa-plus"></i>
+                                                <span>Tạo playlist mới</span>
+                                            </li>
+                                        </a>
                                     </div>
-                                    <div class="col l-2-4 m-3 s-6 mobile-margin-bot-30px">
-                                        <li class="option-all__playlist-item">
-                                            <div class="option-all__playlist-item-img-wrapper">
-                                                <div class="option-all__playlist-item-img-wrapper-action">
-                                                    <i
-                                                        class="fas fa-times option-all__playlist-item-img-wrapper-action-icon1"></i>
-                                                    <i
-                                                        class="fas fa-play option-all__playlist-item-img-wrapper-action-icon2"></i>
-                                                    <i
-                                                        class="fas fa-ellipsis-h option-all__playlist-item-img-wrapper-action-icon3"></i>
-                                                </div>
-                                                <div class="option-all__playlist-item-img"
-                                                    style="background-image: url(./assets/img/playlist/1.webp);"></div>
+                                    <div class="dialog overlay" id="playlist_dialog">
+                                        <a href="#" class="overlay_btn_close"></a>
+                                        <div class="dialog_body">
+                                            <a href="#" class="btn_close">&times;</a>
+                                            <h3>Create new playlist</h3>
+                                            <input class="playlistName" type="text" placeholder="Name playlist">
+                                            <div class="dialog_content">
+                                                <p>Public</p>
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
                                             </div>
-                                            <div class="option-all__playlist-item-content">
-                                                <div class="option-all__playlist-item-content-name1 js__main-color">
-                                                    Replay</div>
-                                                <div class="option-all__playlist-item-content-name2 js__sub-color">Văn
-                                                    Sơn Nguyễn</div>
-                                            </div>
-                                        </li>
+                                            <button class="btn_create_playlist">Create</button>
+                                        </div>
                                     </div>
                                 </div>
                             </ul>
@@ -561,16 +462,16 @@
                     <!-- part slider -->
                     <div class="container-discover__slider">
                         <div class="container-discover__slider-item container-discover__slider-item-first">
-                            <img src="./assets/img/slider-discover/1.jpg" alt="anh"
-                                class="container-discover__slider-item-img">
+                            <img src="https://photo-zmp3.zmdcdn.me/banner/3/5/b/4/35b41aca7274e0d8c52c4481ae2d809e.jpg"
+                                alt="anh" class="container-discover__slider-item-img">
                         </div>
                         <div class="container-discover__slider-item container-discover__slider-item-second">
-                            <img src="./assets/img/slider-discover/2.jpg" alt="anh"
-                                class="container-discover__slider-item-img">
+                            <img src="https://photo-zmp3.zmdcdn.me/banner/7/f/9/1/7f9175d6237d364120ba5ad492c56925.jpg"
+                                alt="anh" class="container-discover__slider-item-img">
                         </div>
                         <div class="container-discover__slider-item container-discover__slider-item-third">
-                            <img src="./assets/img/slider-discover/3.jpg" alt="anh"
-                                class="container-discover__slider-item-img">
+                            <img src="https://photo-zmp3.zmdcdn.me/banner/1/4/a/6/14a6bc4408e442dc2a892e1d4a189887.jpg"
+                                alt="anh" class="container-discover__slider-item-img">
                         </div>
                         <div class="container-discover__slider-item container-discover__slider-item-four">
                             <img src="./assets/img/slider-discover/4.jpg" alt="anh"
@@ -593,30 +494,8 @@
                             </div>
                         </div>
                         <ul class="option-all__playlist-list">
-                            <div class="row">
-                                <div class="col l-2-4 m-3 s-6 mobile-margin-bot-30px">
-                                    <li class="option-all__playlist-item">
-                                        <div class="option-all__playlist-item-img-wrapper">
-                                            <div class="option-all__playlist-item-img-wrapper-action">
-                                                <i
-                                                    class="white-color fas fa-times option-all__playlist-item-img-wrapper-action-icon1"></i>
-                                                <i
-                                                    class="white-color fas fa-play option-all__playlist-item-img-wrapper-action-icon2"></i>
-                                                <i
-                                                    class="white-color fas fa-ellipsis-h option-all__playlist-item-img-wrapper-action-icon3"></i>
-                                            </div>
-                                            <div class="option-all__playlist-item-img"
-                                                style="background-image: url(./assets/img/playlist/1.webp);"></div>
-                                        </div>
-                                        <div class="option-all__playlist-item-content">
-                                            <div
-                                                class="option-all__playlist-item-content-name1 js__main-color white-color">
-                                                Replay</div>
-                                            <div class="option-all__playlist-item-content-name2 js__sub-color">Văn Sơn
-                                                Nguyễn</div>
-                                        </div>
-                                    </li>
-                                </div>
+                            <div class="row chill">
+
                             </div>
                         </ul>
                     </div>
@@ -629,30 +508,8 @@
                             </div>
                         </div>
                         <ul class="option-all__playlist-list">
-                            <div class="row">
-                                <div class="col l-2-4 m-3 s-6 mobile-margin-bot-30px">
-                                    <li class="option-all__playlist-item">
-                                        <div class="option-all__playlist-item-img-wrapper">
-                                            <div class="option-all__playlist-item-img-wrapper-action">
-                                                <i
-                                                    class="white-color fas fa-times option-all__playlist-item-img-wrapper-action-icon1"></i>
-                                                <i
-                                                    class="white-color fas fa-play option-all__playlist-item-img-wrapper-action-icon2"></i>
-                                                <i
-                                                    class="white-color fas fa-ellipsis-h option-all__playlist-item-img-wrapper-action-icon3"></i>
-                                            </div>
-                                            <div class="option-all__playlist-item-img"
-                                                style="background-image: url(./assets/img/playlist/1.webp);"></div>
-                                        </div>
-                                        <div class="option-all__playlist-item-content">
-                                            <div
-                                                class="option-all__playlist-item-content-name1 js__main-color white-color">
-                                                Replay</div>
-                                            <div class="option-all__playlist-item-content-name2 js__sub-color">Văn Sơn
-                                                Nguyễn</div>
-                                        </div>
-                                    </li>
-                                </div>
+                            <div class="row life">
+
                             </div>
                         </ul>
                     </div>
@@ -665,68 +522,21 @@
                             </div>
                         </div>
                         <ul class="option-all__playlist-list">
-                            <div class="row">
-                                <div class="col l-2-4 m-3 s-6 mobile-margin-bot-30px">
-                                    <li class="option-all__playlist-item">
-                                        <div class="option-all__playlist-item-img-wrapper">
-                                            <div class="option-all__playlist-item-img-wrapper-action">
-                                                <i
-                                                    class="white-color fas fa-times option-all__playlist-item-img-wrapper-action-icon1"></i>
-                                                <i
-                                                    class="white-color fas fa-play option-all__playlist-item-img-wrapper-action-icon2"></i>
-                                                <i
-                                                    class="white-color fas fa-ellipsis-h option-all__playlist-item-img-wrapper-action-icon3"></i>
-                                            </div>
-                                            <div class="option-all__playlist-item-img"
-                                                style="background-image: url(./assets/img/playlist/1.webp);"></div>
-                                        </div>
-                                        <div class="option-all__playlist-item-content">
-                                            <div
-                                                class="option-all__playlist-item-content-name1 js__main-color white-color">
-                                                Replay</div>
-                                            <div class="option-all__playlist-item-content-name2 js__sub-color">Văn Sơn
-                                                Nguyễn</div>
-                                        </div>
-                                    </li>
-                                </div>
+                            <div class="row top100">
                             </div>
                         </ul>
                     </div>
                     <!-- discover all__mv -->
                     <div class="option-all__playlist option-all__margin_bot">
                         <div class="option-heading option-all__playlist-heading">
-                            <h3 class="option-heading-name js__main-color">MV</h3>
+                            <h3 class="option-heading-name js__main-color">Podcast</h3>
                             <div class="more-list mobile-hiden">
                                 <span class="js__main-color">Tất cả</span>
                                 <i class="fas fa-chevron-right js__main-color"></i>
                             </div>
                         </div>
                         <ul class="option-all__playlist-list">
-                            <div class="row">
-                                <div class="col l-4 m-4 s-12 mobile-margin-bot-30px">
-                                    <li class="option-all__playlist-item">
-                                        <div class="option-all__playlist-item-img-wrapper">
-                                            <div class="option-all__playlist-item-img-wrapper-action">
-                                                <!-- <i class="fas fa-times option-all__playlist-item-img-wrapper-action-icon1"></i> -->
-                                                <i
-                                                    class="fas fa-play option-all__playlist-item-img-wrapper-action-icon2"></i>
-                                                <!-- <i class="fas fa-ellipsis-h option-all__playlist-item-img-wrapper-action-icon3"></i> -->
-                                            </div>
-                                            <div class="option-all__playlist-item-img option-all__playlist-item-img-mv"
-                                                style="background-image: url(./assets/img/mv/1.webp);"></div>
-                                        </div>
-                                        <div class="option-all__playlist-item-content-mv">
-                                            <img src="./assets/img/mv/icon1.jpg" alt="thanh hung"
-                                                class="option-all__playlist-item-content-img">
-                                            <div class="option-all__playlist-item-content-name">
-                                                <div class="option-all__playlist-item-content-name1 js__main-color">Thay
-                                                    Tôi Yêu Cô Ấy</div>
-                                                <div class="option-all__playlist-item-content-name2 js__sub-color">Thanh
-                                                    Hưng</div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </div>
+                            <div class="row podcast">
 
                             </div>
                         </ul>
@@ -741,32 +551,8 @@
                             </div>
                         </div>
                         <ul class="option-all__playlist-list">
-                            <div class="row">
-                                <div class="col l-2-4 m-4 s-6 mobile-margin-bot-30px">
-                                    <li class="option-all__playlist-item option-all__playlist-item-margin_top">
-                                        <div
-                                            class="option-all__playlist-item-img-wrapper option-all__playlist-item-img-wrapper-mv">
-                                            <div class="option-all__playlist-item-img-wrapper-action">
-                                                <!-- <i class="fas fa-times option-all__playlist-item-img-wrapper-action-icon1"></i> -->
-                                                <i
-                                                    class="fas fa-play option-all__playlist-item-img-wrapper-action-icon2"></i>
-                                                <!-- <i class="fas fa-ellipsis-h option-all__playlist-item-img-wrapper-action-icon3"></i> -->
-                                            </div>
-                                            <div class="option-all__playlist-item-img option-all__playlist-item-img-singer"
-                                                style="background-image: url(./assets/img/singer/1.webp);"></div>
-                                        </div>
-                                        <div class="option-all__playlist-item-content-singer">
-                                            <div class="option-all__playlist-item-content-singer-name1 js__main-color">
-                                                Mr.Siro</div>
-                                            <div class="option-all__playlist-item-content-singer-name2 js__sub-color">
-                                                757K quan tâm</div>
-                                            <div class="option-all__playlist-item-content-singer-profile">
-                                                <i class="fas fa-random js__main-color"></i>
-                                                <span class="js__main-color">Góc nhạc</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </div>
+                            <div class="row artists">
+
                             </div>
                         </ul>
                     </div>
@@ -783,342 +569,33 @@
                     </div>
                     <div class="zingchart-week__headding zingchart__headding js__main-color">Bảng Xếp Hạng Tuần</div>
                     <div class="row">
-                        <div class="col l-4 laptop-l-6 m-12 s-12">
+                        <div class="col l-4 laptop-l-6 m-12 s-12 vn">
                             <div class="zingchart-week__item-wrapper js__backgroundColor">
                                 <span class="zingchart-week__headding js__main-color">Việt Nam</span>
-                                <ul class="zingchart-week__list">
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">1</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/0.webp" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-name">Tình
-                                                    Yêu Ngủ Quên</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Hoàng
-                                                    Tôn, LyHan, Orinn Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">05:08</div>
-                                    </li>
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">2</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/1.webp" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-name">Váy
-                                                    Cưới</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Thuỳ
-                                                    Duyên Cover, Huy Lee Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">04:20</div>
-                                    </li>
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">3</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/2.webp" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-name">Yêu
-                                                    Đừng Sợ Đau</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Ngô
-                                                    Lan Hương, Cukak Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">04:56</div>
-                                    </li>
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">4</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/3.jpg" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span class="js__main-color zingchart-week__item-center-content-name">Có
-                                                    Hẹn Với Thanh Xuân</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Monstar
-                                                    ,1967 Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">05:26</div>
-                                    </li>
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">5</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/4.webp" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-name">Vui
-                                                    Lắm Nha</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Hương
-                                                    Ly, Jombie, RIN Music Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">03:56</div>
-                                    </li>
+                                <ul class="zingchart-week__list week_vn">
+
                                 </ul>
                                 <div class="zingchart__100more zingchart-week__100more">
                                     <span class="zingchart__100more-body js__main-color js__border">Xem tất cả</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-4 laptop-l-6 m-12 s-12">
+                        <div class="col l-4 laptop-l-6 m-12 s-12 us_uk">
                             <div class="zingchart-week__item-wrapper js__backgroundColor">
                                 <span class="zingchart-week__headding js__main-color">US-UK</span>
-                                <ul class="zingchart-week__list">
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">1</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/0.webp" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-name">Tình
-                                                    Yêu Ngủ Quên</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Hoàng
-                                                    Tôn, LyHan, Orinn Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">05:08</div>
-                                    </li>
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">2</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/1.webp" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-name">Váy
-                                                    Cưới</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Thuỳ
-                                                    Duyên Cover, Huy Lee Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">04:20</div>
-                                    </li>
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">3</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/2.webp" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-name">Yêu
-                                                    Đừng Sợ Đau</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Ngô
-                                                    Lan Hương, Cukak Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">04:56</div>
-                                    </li>
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">4</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/3.jpg" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span class="js__main-color zingchart-week__item-center-content-name">Có
-                                                    Hẹn Với Thanh Xuân</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Monstar
-                                                    ,1967 Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">05:26</div>
-                                    </li>
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">5</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/4.webp" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-name">Vui
-                                                    Lắm Nha</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Hương
-                                                    Ly, Jombie, RIN Music Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">03:56</div>
-                                    </li>
+                                <ul class="zingchart-week__list week_uk">
+
                                 </ul>
                                 <div class="zingchart__100more zingchart-week__100more">
                                     <span class="zingchart__100more-body js__main-color js__border">Xem tất cả</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-4 laptop-l-6 m-12 s-12">
+                        <div class="col l-4 laptop-l-6 m-12 s-12 korean">
                             <div class="zingchart-week__item-wrapper js__backgroundColor">
                                 <span class="zingchart-week__headding js__main-color">K-Pop</span>
-                                <ul class="zingchart-week__list">
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">1</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/0.webp" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-name">Tình
-                                                    Yêu Ngủ Quên</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Hoàng
-                                                    Tôn, LyHan, Orinn Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">05:08</div>
-                                    </li>
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">2</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/1.webp" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-name">Váy
-                                                    Cưới</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Thuỳ
-                                                    Duyên Cover, Huy Lee Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">04:20</div>
-                                    </li>
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">3</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/2.webp" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-name">Yêu
-                                                    Đừng Sợ Đau</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Ngô
-                                                    Lan Hương, Cukak Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">04:56</div>
-                                    </li>
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">4</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/3.jpg" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span class="js__main-color zingchart-week__item-center-content-name">Có
-                                                    Hẹn Với Thanh Xuân</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Monstar
-                                                    ,1967 Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">05:26</div>
-                                    </li>
-                                    <li class="zingchart-week__item">
-                                        <div class="zingchart-week__item-left">
-                                            <span
-                                                class="zingchart__item-left-stt zingchart-week__item-left-stt">5</span>
-                                            <span
-                                                class="zingchart__item-left-line zingchart-week__item-left-line">-</span>
-                                        </div>
-                                        <div class="zingchart-week__item-center">
-                                            <img src="./assets/img/songs/4.webp" alt="anh"
-                                                class="zingchart-week__item-center-img">
-                                            <div class="zingchart-week__item-center-content">
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-name">Vui
-                                                    Lắm Nha</span>
-                                                <span
-                                                    class="js__main-color zingchart-week__item-center-content-singer">Hương
-                                                    Ly, Jombie, RIN Music Remix</span>
-                                            </div>
-                                        </div>
-                                        <div class="zingchart-week__item-right mobile-hiden js__main-color">03:56</div>
-                                    </li>
+                                <ul class="zingchart-week__list week_kr">
+
                                 </ul>
                                 <div class="zingchart__100more zingchart-week__100more">
                                     <span class="zingchart__100more-body js__main-color js__border">Xem tất cả</span>
@@ -1132,9 +609,7 @@
             <!-- END CONTAINER -->
 
             <!-- LIST SONG MOBILE -->
-            <!-- <div class="container-mobile">
-                tesst
-            </div> -->
+
 
 
             <!-- theme modal -->
@@ -1486,7 +961,8 @@
                 <div class="mobile-player__headding-close"><i class="fas fa-times"></i></div>
             </div>
             <div class="mobile-player__body" data-active="true">
-                <div class="mobile-player__body-thumb" style="background-image: url(./assets/img/songs/0.webp);"></div>
+                <div class="mobile-player__body-thumb"
+                    style="background-image: url(./assets/img/playlist/Zing-MP3.jpg);"></div>
                 <div class="mobile-player__body-now">
                     <span class="mobile-player__body-now-name">Tình Yêu Ngủ Quên</span>
                     <span class="mobile-player__body-now-singer">Hoàng Tôn, LyHan, Orinn Remix</span>
@@ -1526,13 +1002,21 @@
                 </div>
             </div>
         </div>
-
+        <div class="hidden-form">
+            <div class="form">
+                <div class="form_title">Playlist</div>
+                <div class="selected">        
+                </div>
+                <div class="btn_form">
+                    <button class="submit_btn">Submit</button>
+                    <button onclick="toggleFormClose()">Close</button>
+                </div>  
+            </div>
+        </div>
         <!-- END PLAYER ON MOBILE -->
-
-
-    </div>
-
-    <script src="./assets/javascript/main.js"></script>
+        </div>
+        <script src="./assets/javascript/main.js"></script>
+        <script src="./assets/javascript/index.js"></script>
 </body>
 
 </html>

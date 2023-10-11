@@ -1,6 +1,8 @@
 const sql = require("mssql");
 var config = require("./connect");
 
+
+
 async function getBooks() {
   try {
     let pool = await sql.connect(config);
@@ -53,7 +55,8 @@ async function getUsers() {
 async function getUser(email, pass) {
   try {
     let pool = await sql.connect(config);
-    const query = "SELECT * FROM users WHERE email = @email AND password = @pass";
+    const query =
+      "SELECT * FROM users WHERE email = @email AND password = @pass";
     const result = await pool
       .request()
       .input("email", sql.NVarChar, email)
@@ -64,7 +67,6 @@ async function getUser(email, pass) {
     console.log(error);
   }
 }
-
 
 async function addUser(user) {
   try {
@@ -86,11 +88,14 @@ async function addUser(user) {
   }
 }
 
+
+
 module.exports = {
-  getBooks: getBooks,
-  getBook: getBook,
-  addBook: addBook,
-  getUsers: getUsers,
-  getUser: getUser,
-  addUser: addUser,
+  // getBooks: getBooks,
+  // getBook: getBook,
+  // addBook: addBook,
+  // getUsers: getUsers,
+  // getUser: getUser,
+  // addUser: addUser,
+  // addPlaylist: addPlaylist
 };

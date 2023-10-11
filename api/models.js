@@ -17,4 +17,12 @@ class User {
   }
 }
 
-module.exports = { Book: Book, User: User };
+class Playlists {
+  constructor(PlaylistsID, PlaylistName, UserID) {
+    this.PlaylistsID = PlaylistsID;
+    this.PlaylistsName = PlaylistsName;
+    this.UserID = UserID;
+  }
+}
+
+module.exports = { Book: Book, User: User, Playlists: Playlists };
